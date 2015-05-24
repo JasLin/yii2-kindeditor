@@ -18,25 +18,22 @@ to the require section of your application's `composer.json` file.
 
 ## Usage Example
 ### In config
-```
+
+```php
 'modules'=>[
     'upload' => [
-        'class' => 'cabbage\kindeditor\Module',
+        'class' => 'jaslin\kindeditor\Module',
     ],
 ]
 ```
 ### In view
-```
-~~~php
-echo $form->field($model, 'post')->widget(jaslin\kindeditor\KindEditor::className(), [
-    'options' => [
-        
-    ],
-    'configs' => [
-    ]
-]);
+
+```php
+echo $form->field($model, 'content')->widget(jaslin\kindeditor\KindEditor::className(), ['options' => [],'configs' => []]);
+
 ## configs http://kindeditor.net/docs/option.html
-~~~
+```
+
 ## HighLight Code Example
 jaslin\kindeditor\LightAsset::register($this);
 
