@@ -1,0 +1,18 @@
+{
+    "name": "jaslin/yii2-kindeditor",
+    "description": "simply kindeditor for yii2 textarea with image upload controller",
+    "homepage":"https://github.com/jaslin/yii2-kindeditor",
+    "keywords": ["yii2","kindeditor","upload","simply"],
+    "license": "GNU",
+    "author": "jaslin",
+    "minimum-stability": "beta",
+    "require": {
+        "php": ">=5.4",
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "jaslin\\kindeditor\\": ""
+        }
+    }
+}
