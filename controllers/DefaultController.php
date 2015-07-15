@@ -43,6 +43,9 @@ class DefaultController extends Controller
 
             'user_id' => \Yii::$app->user->isGuest ? 0 : \Yii::$app->user->identity->id,
         ];
+
+        $module = \Yii::$app->controller->module;
+        Upload::$db = $module->db;
         $model = new Upload();
 
         $model->setAttributes($uploadData);
