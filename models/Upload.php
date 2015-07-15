@@ -22,21 +22,23 @@ use Yii;
  */
 class Upload extends \yii\db\ActiveRecord
 {
+    public static $db = 'db';
     /**
      * @inheritdoc
      */
+
     public static function tableName()
     {
         return 'uploads';
     }
 
-//    /**
-//     * @return \yii\db\Connection the database connection used by this AR class.
-//     */
-//    public static function getDb()
-//    {
-//        return Yii::$app->get('mrdadatour');
-//    }
+   /**
+    * @return \yii\db\Connection the database connection used by this AR class.
+    */
+   public static function getDb()
+   {   
+       return Yii::$app->get(self::$db);
+   }
 
     /**
      * @inheritdoc
