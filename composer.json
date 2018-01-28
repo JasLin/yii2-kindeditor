@@ -4,7 +4,7 @@
     "homepage":"https://github.com/jaslin/yii2-kindeditor",
     "keywords": ["yii2","kindeditor","upload","simply"],
     "type": "yii2-extension",
-    "license": "GNU",
+    "license": "BSD-4-Clause",
     "author": "jaslin",
     "minimum-stability": "beta",
     "require": {
